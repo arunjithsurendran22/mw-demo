@@ -5,21 +5,29 @@ import About from "./pages/About/About";
 import Service from "./pages/Service/Service";
 import Testimonial from "./pages/Testimonial/Testimonial";
 import Contact from "./pages/Contact/Contact";
-import Layout from "./Layout";
+import NavigationBar from "./componets/NavigationBar"
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="services" element={<Service />} />
-          <Route path="testimonial" element={<Testimonial />} />
-          <Route path="contact" element={<Contact />} />
-        </Route>
-      </Routes>
-    </Router>
+    // <Router>
+    //   <Routes>
+    //     <Route path="/" element={<Layout />}>
+    //       <Route index element={<Home />} />
+    //       <Route path="about" element={<About />} />
+    //       <Route path="services" element={<Service />} />
+    //       <Route path="testimonial" element={<Testimonial />} />
+    //       <Route path="contact" element={<Contact />} />
+    //     </Route>
+    //   </Routes>
+    // </Router>
+    <div>
+      <NavigationBar/>
+      <Home/>
+      <About/>
+      <Service/>
+      <Testimonial/>
+      <Contact/>
+    </div>
   );
 }
 

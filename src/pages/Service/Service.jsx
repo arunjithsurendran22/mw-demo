@@ -2,7 +2,7 @@ import React from 'react';
 
 function Service() {
   return (
-    <div className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 p-8 h-[49.7rem] w-full">
+    <div className="bg-gradient-to-r from-black via-gray-900 to-gray-700 p-8 h-[49.7rem] w-full">
       <h2 className="text-4xl font-bold text-white text-center mb-8">Our Services</h2>
       <div className="flex justify-evenly space-x-4">
         <div className="max-w-sm w-full bg-white rounded overflow-hidden shadow-lg">
